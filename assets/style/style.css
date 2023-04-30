@@ -83,7 +83,7 @@ input {
 
 ::placeholder {
     color: var(--dark-green);
-    font-size: 24px;
+    font-size: 19px;
     line-height: 36px;
     text-align: right;
     font-family: Space Mono;
@@ -241,7 +241,7 @@ button {
     }
 
     article {
-        width: 130px;
+        width: 115px;
     }
 
     button {
