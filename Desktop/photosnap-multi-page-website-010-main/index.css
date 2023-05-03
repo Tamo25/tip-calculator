@@ -1,0 +1,450 @@
+/* home page */
+.content {
+    background-color: #000000;
+    color: #fff;
+    padding: 72px 33px;
+    margin-top: -5px;
+    position: relative;
+}
+
+.line {
+    height: 6px;
+    width: 128px;
+    left: 33px;
+    top: 0px;
+    background: linear-gradient(26.57deg,
+            #ffc593 0%,
+            #bc7198 43.29%,
+            #5a77ff 83.33%);
+    position: absolute;
+}
+
+section h1 {
+    font-family: DM Sans;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 3.3333332538604736px;
+    text-align: left;
+}
+
+section .text {
+    font-family: DM Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    opacity: 60%;
+    margin-top: 16px;
+}
+
+section .text-1 {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top: 23px;
+}
+
+.arrow {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(268deg) brightness(103%) contrast(103%);
+}
+
+.invite {
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+}
+
+.invite img {
+    align-self: flex-end;
+}
+
+.white-space {
+    padding: 72px 33px;
+}
+
+hr {
+    width: 100%;
+}
+
+.arr {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(268deg) brightness(103%) contrast(103%);
+}
+
+.card.first {
+    background-image: url(../assets/stories/mobile/mountains.jpg);
+}
+
+.card.second {
+    background-image: url(../assets/stories/mobile/cityscapes.jpg);
+}
+
+.card.third {
+    background-image: url(../assets/stories/mobile/18-days-voyage.jpg);
+}
+
+.card.four {
+    background-image: url(../assets/stories/mobile/architecturals.jpg);
+}
+
+.container .card {
+    height: 375px;
+    position: relative;
+    display: grid;
+    align-content: flex-end;
+    background-size: cover;
+    padding: 2rem;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    isolation: isolate;
+    gap: 7px;
+}
+
+.container .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.25;
+    display: block;
+    z-index: -1;
+}
+
+.arrow-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.about-text {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+.white-box {
+    padding: 80px 33px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-box h3 {
+    margin-top: 48px;
+}
+
+.white-box p {
+    margin-top: 16px;
+    text-align: center;
+    opacity: 60%;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.last {
+    padding-bottom: 80px;
+}
+
+.no-limit-text {
+    margin-top: 66px;
+}
+
+.desktop,
+.tablet {
+    display: none;
+}
+
+/* tablet size*/
+@media (min-width: 590px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* home page */
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+        width: 273px;
+        margin-top: -5px;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+    }
+
+    .first-1 {
+        flex-direction: row-reverse;
+    }
+
+    .content {
+        height: 650px;
+        padding: 173px 54px;
+    }
+
+    .line {
+        height: 304px;
+        width: 6px;
+        left: 0px;
+        top: 173px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 4.166666507720947px;
+        text-transform: uppercase;
+    }
+
+    .invite {
+        margin-top: 31px;
+    }
+
+    .first {
+        padding: 136px 54px;
+    }
+
+    .first h1 {
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 4.166666507720947px;
+        width: 300px;
+    }
+
+    .three-3 {
+        flex-direction: row-reverse;
+    }
+
+    .three-3 h1 {
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 4.166666507720947px;
+    }
+
+    .text {
+        width: 370px;
+    }
+
+    .container .card {
+        height: 500px;
+    }
+
+    .white-box {
+        padding: 120px 155px 0;
+    }
+
+    .last {
+        padding-bottom: 120px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* home page */
+    .two,
+    .three-3 {
+        justify-content: space-between;
+    }
+
+    .content {
+        padding: 173px 111px;
+        margin: 0;
+    }
+
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .container a {
+        position: relative;
+    }
+
+    .container a:hover::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(26.57deg,
+                #ffc593 0%,
+                #bc7198 43.29%,
+                #5a77ff 83.33%);
+    }
+
+    .text-1:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .container a:hover {
+        cursor: pointer;
+    }
+
+    .card.four,
+    .card.third,
+    .card.second,
+    .card.first {
+        position: relative;
+        top: 0;
+        transition: top 0.3s ease-in-out;
+    }
+
+    .card.first:hover {
+        top: -30px;
+    }
+
+    .card.second:hover {
+        top: -30px;
+    }
+
+    .card.third:hover {
+        top: -30px;
+    }
+
+    .card.four:hover {
+        top: -30px;
+    }
+
+    .first-1 {
+        flex-direction: row;
+    }
+
+    .hero-img {
+        background-size: cover;
+        width: 110%;
+        height: 650px;
+        background-repeat: no-repeat;
+        background-image: url(../assets/home/desktop/create-and-share.jpg);
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .two {
+        flex-direction: row-reverse;
+    }
+
+    .image-space {
+        background-image: url(../assets/home/desktop/beautiful-stories.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 70%;
+        height: 650px;
+    }
+
+    .image-source {
+        background-image: url(../assets/home/desktop/designed-for-everyone.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 55%;
+        height: 650px;
+    }
+
+    .three-3 {
+        flex-direction: row;
+    }
+
+    .card.first {
+        background-image: url(../assets/stories/desktop/mountains.jpg);
+    }
+
+    .card.second {
+        background-image: url(../assets/stories/desktop/cityscapes.jpg);
+    }
+
+    .card.third {
+        background-image: url(../assets/stories/desktop/18-days-voyage.jpg);
+    }
+
+    .card.four {
+        background-image: url(../assets/stories/desktop/architecturals.jpg);
+    }
+}
+
+@media (min-width: 1440px) {
+
+    /* home page */
+    .tablet {
+        display: none;
+    }
+
+    .content {
+        margin: 0;
+        width: 45%;
+    }
+
+    .hero-img {
+        width: 55%;
+    }
+
+    .image-space {
+        width: 55%;
+    }
+
+    .white-space.first {
+        width: 39%;
+    }
+
+    .image-source {
+        width: 55%;
+    }
+
+    .white-space.two {
+        padding: 160px 100px;
+    }
+
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .box-container {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        padding: 120px 165px;
+        gap: 30px;
+    }
+
+    .white-box {
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+}
